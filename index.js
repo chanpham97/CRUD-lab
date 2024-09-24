@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')()
 // ARRAY SECTION
 // Task 1 [1.5]
 // Create an array called truths and store 3 true facts about yourself
@@ -19,21 +20,31 @@
 // Console log the lies list to confirm the changes
 
 // Task 4 [1.4]
+// Use string concatenation or template literals to print "I have [number] facts." 
+// You should plug in the length of truths in the square brackets for number
+
+// Task 5 [1.5]
 // Prompt the user to enter 0, 1, or 2 and save it in a variable called index
 
 // Cast index to be a number
 
-// Task 5 [1.6]
-// Write an if/else statement that checks:
-// - if randomNumber is less than 0.5, console log the element at index from the truths array
-// - else, console log the element at index from the lies array
+// Task 5 [1.5]
 let randomNumber = Math.random()
 
-// Task 6 [1.6]
+if (randomNumber < 0.5){
+    // console log the element at index from the truths array
+
+} else {
+    // console log the element at index from the lies array
+
+}
 // Prompt the user to guess if it's true or false
 
-// Use a similar if/else statement as above to print the correct answer
-
+if (randomNumber < 0.5){
+   console.log("It was the truth!")
+} else {
+    console.log("It was not the truth!")
+}
 // Commit your changes with an appropriate message.
 // ----------------------------------
 // OBJECTS SECTION
