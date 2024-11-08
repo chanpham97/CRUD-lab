@@ -2,43 +2,44 @@ const prompt = require('prompt-sync')()
 // ARRAY SECTION
 // Task 1 [1.5]
 // Create an array called truths and store 3 true facts about yourself
-
+let truths = ["I love raccoons", "I enjoy cooking", "I like to run"]
 // Create a second array called lies and store 3 fake facts about yourself
-
+let lies = ["I hate animals", "I like staying indoors", "I love the winter"]
 // Task 2 [1.5]
 // Console log the 1st element of the truths array (element is not same as index!)
-
+console.log(truths[0])
 // Change the value of the last element in the truths to another fact
-
+truths[2] = "I love to travel"
 // Console log the last element to check that it's changed
-
+console.log(truths[2])
 // Task 3 [1.5]
 // Delete the first value from the lies array
-
+lies.shift()
 // Add a new lie to the end of the lies array
-
+lies.push("I am American")
 // Console log the lies list to confirm the changes
-
+console.log(lies)
 // Task 4 [1.4]
 // Use string concatenation or template literals to print "I have [number] facts." 
 // You should plug in the length of truths in the square brackets for number
-
+console.log(`I have ${truths.length} facts.`)
 // Task 5 [1.5]
 // Prompt the user to enter 0, 1, or 2 and save it in a variable called index
-
+let index = prompt("Enter 0, 1, or 2: ")
 // Cast index to be a number
-
+index = parseInt(index)
 // Task 5 [1.5]
 let randomNumber = Math.random()
 
 if (randomNumber < 0.5){
     // console log the element at index from the truths array
-
+    console.log(truths[index])
 } else {
     // console log the element at index from the lies array
-
+    console.log(lies[index])
 }
 // Prompt the user to guess if it's true or false
+let guess = prompt("Truth or lie? ")
 
 if (randomNumber < 0.5){
    console.log("It was the truth!")
