@@ -51,25 +51,38 @@ if (randomNumber < 0.5){
 // OBJECTS SECTION
 // Task 7 [1.5]
 // Create a variable called user1 with the keys username (any string), password (any string), friendCount (any number), and isOnline (false).
-
+let user1 = {
+    username: "mspham",
+    password: "softwarerocks",
+    friendCount: 18,
+    isOnline: false
+}
 // Console log the profile's username
+console.log(user1.username)
 
 // Task 8 [1.5]
 // Make the friend count go up by 1
+user1.friendCount++
 
 // Console log the profile's friendCount to check if the value updated
+console.log(user1.friendCount)
 
 // Task 9 [1.6]
 // Prompt the user to enter their password
+let userGuess = prompt("Enter your password: ")
 
 // If the user's password is correct, console log "Welcome " + username and set their isOnline to true
-
+if (userGuess === user1.password) {
+    console.log(`Welcome ${user1.username}`)
+    user1.isOnline = true
+}
 // Task 10 [1.5]
 // Add a status key to the user1 object and set it to null
-
+user1.status = null
 // Prompt the user to enter a status and save it in a variable
-
+let userStatus = prompt("Enter your status: ")
 // Set the status key to be the user's input
+user1.status = userStatus
 
 // Commit your changes with an appropriate message.
 // Push the changes if you are ready to submit.
